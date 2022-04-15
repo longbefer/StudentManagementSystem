@@ -1,0 +1,96 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+html{
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background-color: #f2f4f7;
+}
+
+nav{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 50px;
+	box-shadow: 0 1px 12px 0 rgba(1,39,78,0.12);
+	background-color: white;
+	z-index: 10;
+}
+
+.profit-img {
+	display: inline-block;
+	padding-top: 10px;
+}
+nav img {
+	height: 30px;
+}
+
+.text {
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+	height: 40px;
+	font-size: 10px;
+}
+
+.profit {
+	margin-right: 10px;
+}
+
+nav>a {
+	/* 将图片往下放一点 */
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.main{
+	width: 100%;
+	height: 100%;
+	/*margin-top: 50px;*/
+}
+
+.side {
+	position: relative;
+	/*margin-top: 70px;*/
+	width: 20%;
+	height: 100%;
+	background-color: white;
+	/*overflow: scroll;*/
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.option {
+	width: 75%;
+	height: 100%;
+}
+
+.card {
+	border-radius: 15px;
+	margin-top: 70px;
+	width: 95%;
+	height: 85%;
+	background-color: white;
+	box-shadow: 0 1px 12px 0 rgba(1,39,78,0.12);
+	overflow: auto;
+}
+
+iframe {
+	width: 100%;
+	height: 99%;
+	border-radius: 15px;
+	border: 0px solid transparent;
+}
+
+.active {
+	/* background-color: #3B90FF; */
+	color: rgba(59,144,255,0.8)!important; 
+}

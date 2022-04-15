@@ -1,0 +1,229 @@
+@charset "UTF-8";
+
+
+*{
+	margin:0;
+	padding: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+
+.cover{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(251,251,251,0.7);
+	/*background: linear-gradient(90deg,#271066,rgba(39,16,102,0) 85%,rgba(39,16,102,0) 0,#271066);*/
+}
+.return-home {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.return-home>a {
+	cursor: pointer;
+	text-decoration: none;
+	font-weight: bolder;
+}
+.return-home>a:active,.return-home>a:visited{
+	color: black;
+}
+.return-home>a:hover,.return-home>a {
+	color: #4D4D4D;
+}
+
+.login_bg {
+    width: 100%;
+    height: 100%;
+    background-image: url(../resource/pexels-shamit-jangra-3013788.jpg);
+    background-size: cover;
+    /* background-position: left top; */
+    background-position: 0px -15px;
+    /* position: fixed; */
+    position: absolute;
+}
+.login_box{
+	position: relative;
+	width: 400px;
+	height: 400px;
+	background: rgba(255,255,255,0.7);
+	margin: 125px auto;
+	margin-bottom: 0px;
+	border-radius:30px ;
+	box-shadow: 0 6px 12px 0 rgba(138,153,150,0.15);
+}
+.login_box .login_logo{
+	position: absolute;
+	width: 250px;
+	height: 328px;
+	top: 0;
+	left: 0px;
+}
+.login_box .login_logo .login_logo_icon{
+	width: 100px ;
+	height:100px;
+	margin-left:90px;
+	margin-top: 70px;
+	margin-bottom: 22px;
+	
+}
+.login_box .login_logo .login_logo_text{
+	width: 172px;
+	height: 64px;
+	margin-left: 54px;
+}
+.login_box .login_line{
+	position: absolute;
+	top:56px;
+	left:253px ;
+	width: 1px;
+	height: 228px;
+	background: #922133;
+}
+.login_box .login_content{
+	position: absolute;
+	top: 0;
+	left: 50px;
+	width: 312px;
+	height: 100%;
+	text-align: center;
+}
+.login_box .login_content h2{
+	font-size: 22px;
+	letter-spacing: 5px;
+	color:#000;
+	margin-top: 56px;
+}
+.login_box .login_content p{
+	font-size: 16px;
+	margin-top: 10px;
+	margin-left: 1px;
+	color:#b7937e ;
+	margin-bottom: 15px;
+}
+.login_box .login_content .login_input .login_username,.login_box .login_content .login_input .login_password{
+	width: 250px;
+	height: 30px;
+	background: rgba(0,0,0,0);
+	border: none;
+	border-bottom:1px solid #999 ;
+	outline: none;
+	font-size: 15px;
+	
+}
+/* .login_box .login_content .login_input .login_password{ */
+	/* margin-top: 10px; */
+	/* margin-bottom: 20px; */
+/* } */
+
+.login_box .login_content .login_input .login_username {
+    margin-top: 10px;
+    /* margin-bottom: 20px; */
+}
+
+
+.login_box .login_content .login_btn{
+	margin-top: 40px;
+	width: 250px;
+	line-height: 30px;
+	border-radius: 5px;
+	font-size: 16px;
+	text-align: center;
+	border: none;
+	color: #fff;
+	outline: none;
+}
+
+.login_box .login_content .sure{
+	background: #ED7B06;
+	/* margin-left: 65px; */
+}
+.login_box .login_content .sure:hover{
+	background: #ED7B06;
+}
+.login_box .login_content .cancle{
+	background: #ED7B06;
+	margin-left: 10px;
+	
+}
+.login_box .login_content .cancle:hover{
+	background: #ED7B06;
+}
+.login_bg .text{
+	z-index: 1;
+	float:center;
+	color: #D0C6C3;
+	text-align:center;
+	margin:0 auto;
+}
+
+.login_verify {
+	width: 200px;
+	height: 30px;
+	background: rgba(0,0,0,0);
+	border: none;
+	border-bottom: 1px solid #999;
+	outline: none;
+	font-size: 15px;
+}
+
+.verify {
+	display: inline-block;
+	text-align: left;
+	width: 50px;
+	height: 30px;
+	/* background-color: #fbfbfb; */
+}
+#login_code {
+	width: 100%;
+    height: 100%;
+    line-height: 100%;
+    vertical-align: bottom;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.verify_code_box {
+	/* text-align: left; */
+}
+
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 50%;
+	height: 20px;
+	padding: .5rem 1rem;
+	text-align: center!important;
+	z-index: 10;
+	transform: translate(-50%);
+}
+
+.container {
+    align-items: center;
+    justify-content: space-between;
+    color: #fff!important;
+    text-align: center!important;
+    background-color: #dc3545!important;
+    display: inline-block;
+    border-radius: .25rem;
+}
+
+.mcontainer {
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+.login_box .login_content .error-tip{
+	/* display: none; */
+	height: 16px;
+	text-align: left;
+	font-size: 10px!important;
+	margin: 0;
+	padding: 0;
+	padding-left: 30px;
+}

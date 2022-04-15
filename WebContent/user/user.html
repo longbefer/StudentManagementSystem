@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>欢迎使用学生管理系统</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/user.css"/>
+		<script>
+			window.onload = function() {
+				setXML('menu', 'menu.jsp', 'html');
+			}
+
+			function loadInfo(ev) {
+				console.log("click the info");
+				setXML('main', 'student_list.jsp', 'html');
+			}
+
+			function setXML(domin, file, type) {
+				var xmlHttp;
+				if (window.XMLHttpRequest) {
+					// IE7, Chrome ect. Browser use
+					xmlHttp = new XMLHttpRequest();
+				} else {
+					// for IE6, IE5
+					xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+				}
+				xmlHttp.onreadystatechange = function() {
+					if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+						var std = xmlHttp.responseText;
+						// console.log(std);
+						document.getElementById(domin).innerHTML = std;
+					}
+				}
+				xmlHttp.open('GET', file, true);
+				xmlHttp.send();
+			}
+		</script>
+	</head>
+	<body>
+		<!-- 主要的页面设计 -->
+		<nav>
+			<!--头部栏-->
+			<a href="user.html" class="fl">
+				<img src="../resource/college.jpg" alt="主页" height="30px"/>
+			</a>
+			<div class="profit fr">
+				<div class="profit-img"><img src="../resource/default.png"/></div>
+				<div class="text">longbofeng</div>
+			</div>
+			<div class="clearfix"></div>
+		</nav>
+		<div class="main">
+			<!-- 占位符 -->
+			<div class="side fl" id='side'>
+				<!-- 侧边栏，通过ajax加载进来 -->
+				<div id="menu">
+					<!--<h4>信息管理</h4>
+					<ul>
+						<li><a>学生信息管理</a></li>
+						<li><a>班级信息管理</a></li>
+						<li><a>宿舍信息管理</a></li>
+					</ul>
+					<h4 style="margin-top: 5px;">数据报表</h4>
+					<ul>
+						<li><a>学生信息报表</a></li>
+						<li><a>学生信息报表</a></li>
+						<li><a>学生信息报表</a></li>
+					</ul>-->
+				</div>
+			</div>
+			<div class="option fr">
+				<div class="card" id="content">
+					<!-- 加载内容控件 -->
+					<!--<iframe src=""></iframe>-->
+					<img src="../resource/pexels-shamit-jangra-3013788.jpg"/>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html class="scrool-style">
+	<head>
+		<meta charset="UTF-8">
+		<title>欢迎文档</title>
+		<style>
+			html,body{
+				width: 100%;
+				height: 100%;
+				margin: 0px;
+				padding: 0px;
+			}
+			.about {
+				margin: 0 auto;
+				padding: 0 auto;
+				width: 80%;
+				height: 100%;
+				text-align: center;
+			}
+			.about>p{
+				text-align: left;
+			}
+			img {
+				display: inline-block;
+				width: 90%;
+			}
+			.about>center {
+				font-size: 5px;
+				color: #999999;
+			}
+			/* 滚动条样式 */
+			/*
+			 *  参考自：http://www.xuanfengge.com/demo/201311/scroll/css3-scroll.html
+			 */
+			 .scrool-style::-webkit-scrollbar-track
+			 {
+			     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+			     border-radius: 10px;
+			     background-color: #F5F5F5;
+			 }
+			 
+			 .scrool-style::-webkit-scrollbar
+			 {
+			     width: 12px;
+			     border-radius: 10px;
+			     background-color: #F5F5F5;
+			 }
+			 
+			 .scrool-style::-webkit-scrollbar-thumb
+			 {
+			     border-radius: 10px;
+			     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+			     background-color: #555;
+			 }
+			
+			 .scrool-style{
+			    scrollbar-arrow-color: #F5F5F5; /*三角箭头的颜色*/
+			    scrollbar-face-color: black; /*立体滚动条的颜色（包括箭头部分的背景色）*/
+			    scrollbar-3dlight-color: #F5F5F5; /*立体滚动条亮边的颜色*/
+			    scrollbar-highlight-color: gray; /*滚动条的高亮颜色（左阴影？）*/
+			    scrollbar-shadow-color: gray; /*立体滚动条阴影的颜色*/
+			    scrollbar-darkshadow-color: gray; /*立体滚动条外阴影的颜色*/
+			    scrollbar-track-color: gray; /*立体滚动条背景颜色*/
+			    scrollbar-base-color: #F5F5F5; /*滚动条的基色*/
+			}
+		</style>
+	</head>
+	<body>
+		<h1 style="text-align: center">欢迎使用</h1>
+		<div class='about'>
+			<img src="../resource/robot-girl.jpg" style="width: 70%"/>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本系统可以对学生的信息进行增删改查，可以查看学生的选修课成绩；可以对老师的课程信息进行增删改查；亦可添加课程信息更改班级、系部等。</p>
+			<img src="../resource/学生信息管理E-R图.png">
+			<center>（图1）本系统的E-R图</center>
+			<br/>
+			<img src="../resource/8%7DWPQF%7B@B4_F67PU~PGJCKX.png" />
+			<center>（图2）本系统的mysql表</center>
+			<br/>
+			<img src="../resource/mysql.jpg"/>
+			<center>（图3）本系统的数据库关系图</center>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;项目参与制作人员：<b>172052102 李涵，172052107 范宝权，172052136 龙博峰，172052216 邢家宁，172052223 王俊龙</b></p>
+		</div>
+	</body>
+</html>
